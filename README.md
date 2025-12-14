@@ -2,6 +2,8 @@
 
 StillTale is an AI-powered Slideshow video generation platform that converts text prompts or full stories into complete videos with consistent characters, scene visuals, and voiceover narration.
 
+[Watch the Demo ](https://www.youtube.com/watch?v=LgTmTHYdntY)
+
 ## Features
 
 - **Two Creation Modes**: Generate from a simple prompt or write your own detailed story
@@ -36,7 +38,7 @@ Create a `.env` file in the root directory:
 
 ```
 GOOGLE_CLOUD_PROJECT=your-project-id
-GOOGLE_CLOUD_LOCATION=region
+GOOGLE_CLOUD_LOCATION=project-region
 GOOGLE_GENAI_USE_VERTEXAI=True
 BRIA_API_TOKEN=your-bria-api-token
 SECRET_KEY=your-secret-key
