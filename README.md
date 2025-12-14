@@ -6,20 +6,11 @@ StillTale is an AI-powered Slideshow video generation platform that converts tex
 
 ### How We Use Bria FIBO
 
-1. **Character Reference Images**: When the story mentions characters like "Luna with silver hair," we call Bria's text-to-image endpoint to generate a reference portrait. This image is stored and reused to keep the character looking consistent.
+1. **Character Reference Images**: When the story mentions characters like "Luna with silver hair," we call Bria's text-to-image endpoint to generate a reference portrait with Detailed description. This image is stored and reused to keep the character looking consistent.
 
 2. **Scene Generation**: For each scene, we send a descriptive prompt to Bria. If the scene includes a known character, we pass the character's reference image using Bria's image-to-image feature, ensuring visual consistency throughout the video.
 
-3. **Async Polling**: Bria's API is asynchronous. We submit a request, receive a status URL, then poll until the image is ready. This handles rate limits gracefully.
 
-## Features
-
-- **Two Creation Modes**: Generate from a simple prompt or write your own detailed story
-- **Character Consistency**: AI identifies characters and maintains their appearance across scenes
-- **Automatic Scene Generation**: Stories are intelligently broken into visual scenes
-- **AI Image Generation**: Stunning visuals created using Bria AI
-- **Voiceover Narration**: Text-to-speech converts narration into audio
-- **Video Assembly**: Images and audio merged into polished MP4 videos
 
 ## Tech Stack
 
