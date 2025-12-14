@@ -4,6 +4,14 @@ StillTale is an AI-powered Slideshow video generation platform that converts tex
 
 [Watch the Demo ](https://www.youtube.com/watch?v=LgTmTHYdntY)
 
+### How We Use Bria FIBO
+
+1. **Character Reference Images**: When the story mentions characters like "Luna with silver hair," we call Bria's text-to-image endpoint to generate a reference portrait. This image is stored and reused to keep the character looking consistent.
+
+2. **Scene Generation**: For each scene, we send a descriptive prompt to Bria. If the scene includes a known character, we pass the character's reference image using Bria's image-to-image feature, ensuring visual consistency throughout the video.
+
+3. **Async Polling**: Bria's API is asynchronous. We submit a request, receive a status URL, then poll until the image is ready. This handles rate limits gracefully.
+
 ## Features
 
 - **Two Creation Modes**: Generate from a simple prompt or write your own detailed story
@@ -68,31 +76,8 @@ npm start
 
 
 
-## Usage
 
-1. Open http://localhost:3000
-2. Register or login
-3. Choose "From Prompt" or "From Story" mode
-4. Enter your text and click "Generate Video"
-5. View your videos in "My Videos" section
 
-## How It Works
 
-1. **Story Analysis**: Gemini AI analyzes your input, identifies characters, and creates scenes
-2. **Character Generation**: Reference images are created for each character
-3. **Scene Visualization**: Bria AI generates images for each scene using character references
-4. **Audio Creation**: gTTS converts narration to speech
-5. **Video Assembly**: OpenCV and FFmpeg combine everything into a final video
-
-## API Endpoints
-
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/auth/register` | POST | Register new user |
-| `/auth/token` | POST | Login |
-| `/auth/verify` | GET | Verify token |
-| `/generate-video` | POST | Start video generation |
-| `/my-videos` | GET | List all videos |
-| `/public-video/{id}` | GET | Stream video file |
 
 
