@@ -32,6 +32,16 @@ StillTale is an AI-powered Slideshow video generation platform that converts tex
 - Node.js 18+
 - FFmpeg installed and in PATH
 
+Create a `.env` file in the root directory:
+
+```
+GOOGLE_CLOUD_PROJECT=your-project-id
+GOOGLE_CLOUD_LOCATION=region
+GOOGLE_GENAI_USE_VERTEXAI=True
+BRIA_API_TOKEN=your-bria-api-token
+SECRET_KEY=your-secret-key
+```
+
 ### Backend Setup
 
 ```bash
