@@ -54,17 +54,7 @@ npm install
 npm start
 ```
 
-### Environment Variables
 
-Create a `.env` file in the root directory:
-
-```
-GOOGLE_CLOUD_PROJECT=your-project-id
-GOOGLE_CLOUD_LOCATION=us-central1
-GOOGLE_GENAI_USE_VERTEXAI=True
-BRIA_API_TOKEN=your-bria-api-token
-SECRET_KEY=your-secret-key
-```
 
 ## Usage
 
@@ -93,6 +83,4 @@ SECRET_KEY=your-secret-key
 | `/my-videos` | GET | List all videos |
 | `/public-video/{id}` | GET | Stream video file |
 
-## License
 
-MIT
