@@ -41,7 +41,7 @@ GOOGLE_CLOUD_PROJECT=your-project-id
 GOOGLE_CLOUD_LOCATION=project-region
 GOOGLE_GENAI_USE_VERTEXAI=True
 BRIA_API_TOKEN=your-bria-api-token
-SECRET_KEY=your-secret-key
+
 ```
 
 ### Backend Setup
