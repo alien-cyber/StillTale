@@ -4,7 +4,7 @@ StillTale is an AI-powered Slideshow video generation platform that converts tex
 
 [Watch the Demo ](https://www.youtube.com/watch?v=LgTmTHYdntY)
 
-### How We Use Bria FIBO
+### How We Use Bria API
 
 1. **Character Reference Images**: When the story mentions characters like "Luna with silver hair," we call Bria's text-to-image endpoint to generate a reference portrait with Detailed description. This image is stored and reused to keep the character looking consistent.
 
